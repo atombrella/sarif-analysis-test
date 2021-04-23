@@ -596,7 +596,7 @@
                           "uri": "one.c"
                         },
                         "region": {
-                          "startLine": 2,
+                          "startLine": 1,
                           "startColumn": 5,
                           "endColumn": 25
                         }
