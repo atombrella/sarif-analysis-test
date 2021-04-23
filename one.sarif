@@ -549,8 +549,7 @@
           ],
           "rank": 67.08296966552734,
           "hostedViewerUri": "http://riddle2:9460/warninginstance/1356686.html"
-        }
-      ],
+      },
       {
         "ruleId": "Missing Return Statement in main",
         "level": "error",
@@ -672,6 +671,7 @@
         "rank": 67.08296966552734,
         "hostedViewerUri": "http://riddle2:9460/warninginstance/1356686.html"
       }
-    }
+    ]
+  }
   ]
 }
