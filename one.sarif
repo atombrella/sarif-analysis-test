@@ -550,7 +550,128 @@
           "rank": 67.08296966552734,
           "hostedViewerUri": "http://riddle2:9460/warninginstance/1356686.html"
         }
-      ]
+      ],
+      {
+        "ruleId": "Missing Return Statement in main",
+        "level": "error",
+        "message": {
+          "text": "  - main() is missing a return statement here.  - This function should return a value of type int.The issue can occur if the highlighted code executes."
+        },
+        "locations": [
+          {
+            "id": 3,
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "one.c"
+              },
+              "region": {
+                "startLine": 8,
+                "startColumn": 1,
+                "endColumn": 2
+              }
+            },
+            "logicalLocations": [
+              {
+                "name": "one"
+              }
+            ],
+            "message": {
+              "text": "  - one() is missing a return statement here.  - This function should return a value of type int.The issue can occur if the highlighted code executes."
+            }
+          }
+        ],
+        "fingerprints": {
+          "codesonarCluster": "f264972d3c1abceb",
+          "codesonarFingerprint": "1297cb7f901fa3c9"
+        },
+        "codeFlows": [
+          {
+            "threadFlows": [
+              {
+                "locations": [
+                  {
+                    "location": {
+                      "id": 1,
+                      "physicalLocation": {
+                        "artifactLocation": {
+                          "uri": "one.c"
+                        },
+                        "region": {
+                          "startLine": 2,
+                          "startColumn": 5,
+                          "endColumn": 25
+                        }
+                      },
+                      "logicalLocations": [
+                        {
+                          "name": "one"
+                        }
+                      ],
+                      "message": {
+                        "text": "one()'s return type is int."
+                      }
+                    },
+                    "nestingLevel": 1
+                  },
+                  {
+                    "location": {
+                      "id": 2,
+                      "physicalLocation": {
+                        "artifactLocation": {
+                          "uri": "one.c"
+                        },
+                        "region": {
+                          "startLine": 4,
+                          "startColumn": 1,
+                          "endColumn": 12
+                        }
+                      },
+                      "logicalLocations": [
+                        {
+                          "name": "one"
+                        }
+                      ],
+                      "message": {
+                        "text": "Skipping \"if\".  *p evaluates to false."
+                      }
+                    },
+                    "kinds": [
+                      "branch false"
+                    ],
+                    "nestingLevel": 1
+                  },
+                  {
+                    "location": {
+                      "id": 3,
+                      "physicalLocation": {
+                        "artifactLocation": {
+                          "uri": "one.c"
+                        },
+                        "region": {
+                          "startLine": 8,
+                          "startColumn": 1,
+                          "endColumn": 2
+                        }
+                      },
+                      "logicalLocations": [
+                        {
+                          "name": "one"
+                        }
+                      ],
+                      "message": {
+                        "text": "  - one() is missing a return statement here.  - This function should return a value of type int.The issue can occur if the highlighted code executes."
+                      }
+                    },
+                    "nestingLevel": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rank": 67.08296966552734,
+        "hostedViewerUri": "http://riddle2:9460/warninginstance/1356686.html"
+      }
     }
   ]
 }
